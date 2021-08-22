@@ -1,0 +1,38 @@
+@use "../base/" as *;
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.3rem;
+  background: transparent;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &-primary {
+    color: $Dark-Text;
+    background-color: #fff;
+    transform: translate3d(0, 0, 0);
+    transition: transform 300ms ease;
+
+    &:hover {
+      background-color: bisque;
+      transform: translate3d(0, -2px, 0);
+    }
+  }
+
+  &-rules {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border: 1px solid white;
+    color: #fff;
+    transition: 300ms ease;
+
+    &:hover {
+      background-color: #fff;
+      color: $Dark-Text;
+    }
+  }
+}

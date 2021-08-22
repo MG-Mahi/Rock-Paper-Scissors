@@ -1,0 +1,41 @@
+@use "../base/" as *;
+
+#header {
+  padding-top: 3%;
+}
+
+.scoreboard {
+  max-width: 43.75rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.875rem;
+  text-align: center;
+
+  &__score {
+    background-color: white;
+    // padding: 0.5rem 1rem;
+    width: 9.375rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    &__title {
+      color: $Score-Text;
+      font-size: 1rem;
+    }
+
+    h1.score {
+      color: $Dark-Text;
+      font-size: 3.5rem;
+    }
+  }
+}

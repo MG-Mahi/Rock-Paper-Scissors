@@ -1,0 +1,19 @@
+@use "../base/" as *;
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(134.34% 134.34% at 50% 0%, $Radial-gradient);
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 29.75rem;
+  height: 26.875rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}

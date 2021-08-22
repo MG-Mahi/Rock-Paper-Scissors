@@ -1,0 +1,28 @@
+@use "../base/" as *;
+
+.game {
+  .hands {
+    margin-top: 2.5rem;
+    background: url("../../public/images/bg-triangle.svg") no-repeat;
+    background-position: center;
+
+    & > * {
+      transform: translate3d(0, 0, 0);
+      cursor: pointer;
+      transition: transform 250ms ease;
+      &:hover {
+        transform: translate3d(0, -0.5rem, 0);
+      }
+    }
+  }
+
+  &__btn {
+    &--scissors {
+      margin-left: 1.25rem;
+    }
+
+    &--paper {
+      margin-right: 1.25rem;
+    }
+  }
+}

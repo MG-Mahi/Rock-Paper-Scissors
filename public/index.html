@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+
+    <!-- ============== Google Fonts ================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ============== Main CSS ================ -->
+    <link rel="stylesheet" href="../src/sass/main.css" />
+    <link rel="stylesheet" href="../src/sass/responsive.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- ============== Header ============== -->
+      <header id="header">
+        <div class="scoreboard">
+          <div class="scoreboard__title">
+            <img src="../public/images/logo.svg" alt="logo" />
+          </div>
+          <div class="scoreboard__score">
+            <p class="scoreboard__score__title">SCORE</p>
+            <h1 class="score" id="score">0</h1>
+          </div>
+        </div>
+      </header>
+
+      <!-- ============== Main ============== -->
+      <main id="main">
+        <!-- ============== Game ============== -->
+        <section class="game" id="game">
+          <div class="container hands">
+            <div class="game__btn game__btn--paper">
+              <img src="./images/Paper.png" alt="paper-icon" class="Paper" />
+            </div>
+            <div class="game__btn game__btn--scissors">
+              <img
+                src="./images/Scissors.png"
+                alt="scissors-icon"
+                class="Scissors"
+              />
+            </div>
+            <div class="game__btn game__btn--rock">
+              <img src="./images/Rock.png" alt="rock-icon" class="Rock" />
+            </div>
+          </div>
+        </section>
+
+        <!-- ============== Contest ============== -->
+        <section class="contest" id="contest">
+          <div class="grid contest__container">
+            <div class="contest__userhand">
+              <h1 class="title">You Picked</h1>
+              <div class="contest__img__container">
+                <img src="./images/Rock.png" alt="rock" class="userhand__img" />
+              </div>
+            </div>
+            <div class="contest__result">
+              <h1 class="result uppercase" id="result">You lose!</h1>
+              <button class="btn btn-primary" id="play-again">
+                Play Again
+              </button>
+            </div>
+            <div class="contest__househand">
+              <h1 class="title">The House Picked</h1>
+              <div class="contest__img__container">
+                <img
+                  src="./images/Paper.png"
+                  alt="paper"
+                  class="userhand__img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="modal" id="modal">
+          <div class="rules-container rules">
+            <div class="rules__flex">
+              <h1 class="title">Rules</h1>
+              <a href=""
+                ><img src="./images/icon-close.svg" alt="close" class="close"
+              /></a>
+            </div>
+            <img
+              src="./images/image-rules.svg"
+              alt="img-rules"
+              class="rules__img"
+            />
+          </div>
+        </section>
+      </main>
+
+      <footer id="footer">
+        <button class="btn btn-rules uppercase" id="rules-btn">Rules</button>
+      </footer>
+    </div>
+
+    <!-- =============== Main Scripts ================ -->
+    <script src="../src/js/app.js"></script>
+  </body>
+</html>
